@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center_horizontal"
+    android:background="@drawable/shape_group"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/artistNameLL"
+        style="@style/RowLayout"
+        android:layout_width="match_parent" >
+
+        <TextView
+            android:id="@+id/artistNameTv"
+            style="@style/ArtistTextView.Weighted"
+            android:layout_weight="0.5"
+            android:gravity="center_vertical"
+            android:text="Artist Name: "
+            android:textAppearance="@style/TextAppearanceBold" />
+
+        <TextView
+            android:id="@+id/artistName"
+            style="@style/ArtistTextView.Weighted"
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:gravity="right|center_vertical"
+            android:text="Name"
+            android:textAppearance="@style/artistTextAppearance" />
+    </LinearLayout>
+
+    <View style="@style/separator" />
+
+    <ImageView
+        android:id="@+id/artistImage"
+        android:layout_width="fill_parent"
+        android:layout_height="90dp"
+        android:layout_marginTop="5dp"
+        android:layout_weight="0.08"
+        android:background="@drawable/no_image"
+        android:gravity="center" />
+
+    <View style="@style/separator" />
+
+    <LinearLayout
+        android:id="@+id/biogLL"
+        style="@style/RowLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/biogyTv"
+            style="@style/ArtistTextView.Weighted"
+            android:layout_weight="0.5"
+            android:text="Biography: "
+            android:textAppearance="@style/TextAppearanceBold" />
+    </LinearLayout>
+
+    <View style="@style/separator" />
+
+    <LinearLayout
+        android:id="@+id/artistBio_layout"
+        style="@style/RowLayout"
+        android:layout_width="match_parent"
+        
+        android:layout_weight="0.13" >
+
+        <TextView
+            android:id="@+id/artistBio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center|center_vertical|center_horizontal"
+            android:textColor="#ffebd514" />
+
+    </LinearLayout>
+
+</LinearLayout><!-- From: file:/Users/csr/Desktop/AndroidStudio_LAB/ArtistDetails/res/layout/artist_details.xml -->
